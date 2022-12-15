@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CYROK E-Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../index.css">
+
+ 
+</head>
+
+  <body id="signinpage">
+   
+
+    
+    <nav class="navbar bg-danger" navbar-inverse" style="border-radius: 0%;">
+      <div class="container-fluid">
+        <div class="navbar-header" onclick="window.location='../homepage.php'">
+          <a class="navbar-brand" href="../homepage.php">CYROK E-Market</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li ><a href="../homepage.php">Home</a></li>
+          <li><a href="../About.html">About CYROK E-Market</a></li>
+          <li><a href="../Contact.html">Contact us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Signupform.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <!--<li id="selectlogin"><a href="#"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>-->
+        </ul>
+
+       
+      </div>
+    </nav>
+    
+    
+    <div id="login-section" >
+      
+        <form id="loginForm" action="../process/login.php" method="post">
+          <h3>SIGN IN</h3>
+          <div style="margin:10px; display:flex;flex-direction: row; align-items: center;" ><label style="margin-right: 10px">Username:</label><input type="text" placeholder="Enter your username"  class="form-control" name="username" required/></div>
+          <div style="margin:10px; display:flex;flex-direction: row; align-items: center;"><label style="margin-right: 10px">Password:</label><input type="password" placeholder="Enter your Password" class="form-control" name="password" required/></div>
+<div style="display:flex;gap:10%;"><label for ="Customer">Customer</label> <input type="radio" value="Customer" name="role" id="Customer"  checked></input><label for="Admin">Admin</label><input type="radio" id="Admin" value= "Admin" name="role"></input></div>
+        <div style="display:flex;flex-direction:row; margin: 10px; justify-content: flex-end; width: 255px;margin-right:-8px;" ><button class="btn btn-success" style="border:1px solid white; justify-self: flex-end;">Login</button></div>
+        <a href="Useroperations/forgot.inc.php"><div style="text-align: end;  width:350px; margin-right: 81px; cursor: pointer;">Forgot Password</div></a> 
+        
+        
+    </form>
+      </div>
+      <script src="../index.js"></script>
+      <script src="../js/app.js"></script>
+      </body>
+      </html>

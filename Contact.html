@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CYROK E-Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrapstyles.css">
+  <link rel="stylesheet" href="Contact.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+  <body>
+   
+
+    <!--Naviation Bar-->
+    <nav class="navbar bg-danger" style="border-radius: 0%;">
+      <div class="container-fluid">
+        <div class="navbar-header" onclick="window.location='homepage.php'">
+          <a class="navbar-brand" href="homepage.php">CYROK E-Market</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li  onclick="gotoHomeFromLogin()"><a href="homepage.php">Home</a></li>
+          <li><a href="About.html">About CYROK E-Market</a><i></i></li>
+          <li><a href="Contact.html">Contact us</a><i></i></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="pages/Signupform.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li id="selectlogin"><a href="pages/signin.html"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+        </ul>
+       
+      </div>
+    </nav>
+	
+	
+	
+	<div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+1 (876) 123-4567</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">cyrokemarket@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>Email us with any questions or inquiries or call 876-123-4567. We would be
+			happy to answer your questions.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box2">
+          <input type="text" placeholder="Enter your email">
+        </div>
+		<div class="input-box3">
+          <input type="text" placeholder="Message">
+        </div>
+        <div class="input-box message-box">
+          
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+<script>
+
+//back to top
+$(function(){ 
+		var offset = 250; 
+		var duration = 300;
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > offset) {
+				$('.back-to-top').fadeIn(duration);
+			} else {
+				$('.back-to-top').fadeOut(duration);
+			}
+		});
+	   
+		$('.back-to-top').click(function(event) {
+			event.preventDefault();
+			$('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		});
+});
+</script>
+
+
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
